@@ -12,6 +12,9 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author Mohammad Farahani (mfarahani31@gmail.com)
+ **/
 
 @Data
 @MappedSuperclass

@@ -12,6 +12,10 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author Mohammad Farahani (mfarahani31@gmail.com)
+ **/
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor

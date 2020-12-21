@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.medobay</groupId>
     <artifactId>commentservice</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>CommentService</name>
     <description>Demo project for Spring Boot</description>
 
@@ -93,6 +93,11 @@
                         </exclude>
                     </excludes>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>4.0.3</version>
             </plugin>
         </plugins>
     </build>

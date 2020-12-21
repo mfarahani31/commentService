@@ -49,7 +49,6 @@ class CommentServiceIntegrationTests {
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertNotNull(response.getBody());
-        //assertEquals(MotherObject.getAnyValidNumberingFormat().getLastAllocatedSerial().toString(), Objects.requireNonNull(response.getBody()).substring(21, 24));
         verify(commentService, times(1)).findByServiceId(anyLong());
     }
 

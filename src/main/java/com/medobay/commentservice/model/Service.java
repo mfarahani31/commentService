@@ -30,7 +30,7 @@ public class Service extends AuditModel implements Serializable {
 
     @NotNull
     @Size(max = 100)
-    @Column(name = "TITLE", unique = true)
+    @Column(name = "TITLE")
     private String title;
 
     @NotNull

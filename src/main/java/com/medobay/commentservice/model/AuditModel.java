@@ -2,13 +2,11 @@ package com.medobay.commentservice.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -32,9 +30,4 @@ public abstract class AuditModel implements Serializable {
     @LastModifiedDate
     private Date updatedAt;
 
-
-    @CreatedBy
-    @NotNull(message = "Created by cannot be null")
-    @Column(name = "created_by")
-    private String createdBy;
 }

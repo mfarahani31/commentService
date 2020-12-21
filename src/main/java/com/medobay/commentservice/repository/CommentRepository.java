@@ -1,8 +1,10 @@
 package com.medobay.commentservice.repository;
 
 import com.medobay.commentservice.model.Comment;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 
@@ -10,10 +12,10 @@ import java.util.Optional;
  * @author Mohammad Farahani (mfarahani31@gmail.com)
  **/
 
-//@RepositoryRestResource(collectionResourceRel = "comment", path = "comment")
-public interface CommentRepository extends CrudRepository<Comment, Long> {
+@Repository
+public interface CommentRepository extends JpaRepository<Comment, Long> {
 
-    Comment findByServiceId(Long serviceId);
+    List<Comment> findByServiceId(Long serviceId);
 
     Optional<Comment> findByServiceIdAndId(Long serviceId, Long commentId);
 }
